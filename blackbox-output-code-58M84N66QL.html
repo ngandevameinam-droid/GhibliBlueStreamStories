@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Wallpapers - Ghibli Blue Stream Stories</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: url('https://raw.githubusercontent.com/ngandevameinam-droid/GhibliBlueStreamStories/main/background.jpeg'); background-size: cover; background-position: center; background-attachment: fixed; min-height: 100vh; color: #2c3e50; }
+        .cloud { position: fixed; background: white; border-radius: 50px; opacity: 0.8; animation: float 20s infinite linear; }
+        .cloud1 { width: 200px; height: 60px; top: 10%; left: -200px; animation-duration: 25s; }
+        .cloud2 { width: 150px; height: 50px; top: 20%; left: -150px; animation-duration: 18s; animation-delay: 5s; }
+        .cloud3 { width: 180px; height: 55px; top: 15%; left: -180px; animation-duration: 22s; animation-delay: 10s; }
+        @keyframes float { 0% { transform: translateX(-200px); } 100% { transform: translateX(calc(100vw + 200px)); } }
+        nav { background: rgba(255,255,255,0.9); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 15px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+        .logo { font-size: 1.4rem; color: #1e90ff; font-weight: bold; }
+        .logo i { margin-right: 8px; animation: spin 3s infinite linear; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        .nav-links { list-style: none; display: flex; gap: 20px; }
+        .nav-links a { text-decoration: none; color: #2c3e50; font-weight: 600; padding: 8px 16px; border-radius: 20px; transition: all 0.3s; }
+        .nav-links a:hover, .nav-links a.active { background: #1e90ff; color: white; }
+        
+        /* Header */
+        .header { text-align: center; padding: 50px 20px 30px; }
+        .header-content { max-width: 600px; margin: 0 auto; background: rgba(255,255,255,0.85); padding: 30px; border-radius: 25px; box-shadow: 0 8px 30px rgba(0,0,0,0.15); border: 3px solid #87CEEB; }
+        .header h1 { font-size: 2rem; color: #1e90ff; margin-bottom: 10px; }
+        .header h1 i { color: #55a630; }
+        .header p { font-size: 1rem; color: #555; }
+        
+        /* Wallpaper Grid - Smaller Images */
+        .wallpapers-section { padding: 20px; max-width: 900px; margin: 0 auto; }
+        .wallpaper-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+        
+        /* Smaller Wallpaper Card */
+        .wallpaper-card { background: rgba(255,255,255,0.9); border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: all 0.3s; border: 2px solid #87CEEB; }
+        .wallpaper-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.2); }
+        
+        /* SMALLER IMAGE - 150px height */
+        .wallpaper-img { width: 100%; height: 150px; object-fit: cover; }
+        
+        .wallpaper-info { padding: 15px; text-align: center; }
+        .wallpaper-info h3 { color: #1e90ff; font-size: 1rem; margin-bottom: 5px; }
+        .wallpaper-info p { color: #888; font-size: 0.8rem; margin-bottom: 10px; }
+        
+        /* Download Button - Smaller */
+        .download-btn { display: inline-block; padding: 8px 20px; background: linear-gradient(135deg, #55a630, #87CEEB); color: white; text-decoration: none; border-radius: 20px; font-weight: bold; font-size: 0.85rem; transition: all 0.3s; }
+        .download-btn:hover { transform: scale(1.05); box-shadow: 0 4px 15px rgba(85,166,48,0.4); }
+        .download-btn i { margin-right: 5px; }
+        
+        /* Footer */
+        footer { background: rgba(255,255,255,0.9); padding: 30px 20px; text-align: center; margin-top: 40px; }
+        .social-links { margin: 15px 0; }
+        .social-links a { display: inline-block; font-size: 1.5rem; color: #1e90ff; margin: 0 12px; transition: transform 0.3s; }
+        .social-links a:hover { transform: scale(1.2); color: #55a630; }
+        .copyright { color: #888; font-size: 0.85rem; }
+        
+        @media (max-width: 768px) { .header h1 { font-size: 1.5rem; } .wallpaper-img { height: 120px; } }
+    </style>
+</head>
+<body>
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+    <div class="cloud cloud3"></div>
+    
+    <nav>
+        <div class="logo"><i class="fa-solid fa-fan"></i> Ghibli Blue Stream Stories</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="wallpapers.html" class="active">Free Wallpapers</a></li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <div class="header-content">
+            <h1><i class="fa-solid fa-images"></i> Free Wallpapers</h1>
+            <p>✨ Download magical Ghibli-inspired wallpapers for free! ✨</p>
+        </div>
+    </header>
+
+    <section class="wallpapers-section">
+        <div class="wallpaper-grid">
+            
+            <!-- Wallpaper 1 -->
+            <div class="wallpaper-card">
+                <img src="https://raw.githubusercontent.com/ngandevameinam-droid/GhibliBlueStreamStories/main/wallpapers1.jpeg" alt="Ghibli Wallpaper 1" class="wallpaper-img">
+                <div class="wallpaper-info">
+                    <h3>🌊 Blue Sky Dreams</h3>
+                    <p>Peaceful sky wallpaper</p>
+                    <a href="https://raw.githubusercontent.com/ngandevameinam-droid/GhibliBlueStreamStories/main/wallpapers1.jpeg" download class="download-btn">
+                        <i class="fa-solid fa-download"></i> Download
+                    </a>
+                </div>
+            </div>
+
+            <!-- Wallpaper 2 -->
+            <div class="wallpaper-card">
+                <img src="https://raw.githubusercontent.com/ngandevameinam-droid/GhibliBlueStreamStories/main/wallpapers2.jpeg" alt="Ghibli Wallpaper 2" class="wallpaper-img">
+                <div class="wallpaper-info">
+                    <h3>🌲 Magical Forest</h3>
+                    <p>Enchanting forest scene</p>
+                    <a href="https://raw.githubusercontent.com/ngandevameinam-droid/GhibliBlueStreamStories/main/wallpapers2.jpeg" download class="download-btn">
+                        <i class="fa-solid fa-download"></i> Download
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://openyt.in/c/@bluestreamstories" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://instagram.com/YOUR_INSTAGRAM" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:YOUR_EMAIL@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <p class="copyright">© 2024 Ghibli Blue Stream Stories. All rights reserved.</p>
+    </footer>
+</body>
+</html>
